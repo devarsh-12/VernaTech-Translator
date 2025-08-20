@@ -1,0 +1,9 @@
+nltk
+torch
+textstat
+transformers
+sqlite3
+flask
+flask-cors
+adaptive-translator
+google-generativeai
