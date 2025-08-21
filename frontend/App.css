@@ -1,0 +1,130 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f7fb;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 30px;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+  background-size: 180% 180%;
+  animation: gradient-animation 18s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.nav-logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.nav-links li a:hover {
+  color: #facc15; /* yellow hover */
+}
+
+.app-container {
+  max-width: 600px;
+  margin: 40px auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.input-textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  margin-bottom: 15px;
+  resize: none;
+  transition: border 0.3s;
+}
+
+.input-textarea:focus {
+  border-color: #0077ff;
+  outline: none;
+}
+
+.input-grade {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  margin-bottom: 20px;
+  transition: border 0.3s;
+}
+
+.input-grade:focus {
+  border-color: #0077ff;
+  outline: none;
+}
+
+.translate-btn {
+  width: 100%;
+  padding: 12px;
+  font-size: 18px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #0077ff, #00c6ff);
+  color: white;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+}
+
+.translate-btn:hover:not(:disabled) {
+  transform: scale(1.03);
+  background: linear-gradient(135deg, #005ed6, #00a4d6);
+}
+
+.translate-btn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.results-card {
+  margin-top: 25px;
+  padding: 20px;
+  background: #f9fbff;
+  border-left: 5px solid #0077ff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.results-card h3 {
+  margin-top: 0;
+  color: #0077ff;
+}
